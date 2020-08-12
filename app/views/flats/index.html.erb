@@ -1,10 +1,15 @@
+<nav class="navbar p-3" style= "background-color: rgb(248, 249, 250)">
+  <h5>Simple Airbnb</h5>
+</nav>
+
 <div class="container">
   <h1>All our Flats</h1>
 
   <div class="row">
     <% @flats.each do |flat| %>
     <div class="col-4">
-      <div class="flat-card" style= "background-color: #eeeeee">
+      <div class="flat-card" style= "background-color: rgb(248, 249, 250)">
+        <div class="flat-card-image" style="background-image: url('<%= flat.picture_url %>')"></div>
         <div class="card-description">
           <div class="flat-card-title">
             <h4><%= flat.name %></h4>
